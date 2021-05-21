@@ -11,6 +11,7 @@ address{font-style : normal;}
 
 /* z-index
 
+header : 300;
 .hbottom_btn a:before : -1;
 
 */
@@ -22,7 +23,7 @@ address{font-style : normal;}
 */
 
 body{
-    padding-top: 60px;
+    padding-top: 103px;
 }
 
 /* common style start */
@@ -43,6 +44,7 @@ header{
     top: 0;
     width: 100%;
     background: #fff;
+    z-index: 300;
 }
 /* htop area */
 header .htop{
@@ -77,13 +79,17 @@ header .htop_menu ul li a{
 }
 header .htop_menu ul li:after{
     content : '';
-    display: block;
     position : absolute;
-    top: calc(50% - 6px);
-    right: -25%;
+    top : 55%;
+    right: -15px;
     width: 1px;
-    height: 12px;
+    height: 11px;
+    transform: translateY(-50%);
     background: #333;
+}
+
+header .htop_menu ul li:last-child:after{
+    display : none;
 }
 
 /* hbottom area */
@@ -123,7 +129,7 @@ header > .hbottom{
 
 .view{
     display : none;
-    /* background: #fff; */
+    opacity: 0;
 }
 
 .submenu{
@@ -134,13 +140,15 @@ header > .hbottom{
     flex-wrap: wrap;
     right: 0;
     left: 0;
+    /* padding-bottom: 10px; */
     background: #fff;
 }
 
 .submenu > li{
     /* width: 180px; */
     background: #fff;
-    margin-right: 10%;
+    padding : 20px;
+    margin-right: 5%;
 }
 .submenu > li > a{}
 
@@ -199,8 +207,6 @@ footer{
     background: #111;
     color : #999;
     font-size: 12px;
-    height: 1000px;
-    /* display: none; */
 }
 
 footer .ftop ul li.f_text{
