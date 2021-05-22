@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+
+/* swiper css */
+.swiper-container {
+    width: 100%;
+}
+
+/* section area start */
 section{
     width: 100%;
     overflow : hidden;
@@ -23,10 +30,14 @@ section .banner img{
     width: 100%;
 }
 
+section .banner video{
+    width: 100%;
+}
+
 .text_area{
     text-align: center;
-    /* margin-bottom: 100px; */
 }
+/* title */
 .text_area h2{
     font-size: 40px;
     font-weight: bold;
@@ -38,9 +49,10 @@ section .banner img{
 }
 
 .text_area p:last-of-type{
-    /* margin-bottom: 25px; */
+
 }
 
+/* common btn style */
 .text_area a{
     display: inline-block;
     border-radius: 22px;
@@ -48,6 +60,11 @@ section .banner img{
     margin-right: 3px;
     background: #000;
     color : #fff;
+    transition : 0.3s;
+}
+
+.text_area a:hover{
+    opacity: 0.7;
 }
 
 .text_area a:last-child{
@@ -58,7 +75,7 @@ section .banner img{
 .box{
     position : relative;
     float : left;
-    width: calc(50% - 3%);
+    width: calc(50% - 1.5%);
     background: green;
     margin-right: 3%;
 }
@@ -94,12 +111,13 @@ section .banner img{
 }
 
 .box1_bg{
-    background-image: url(../img/main/section6_img.jpg);
+    background-image: url('../img/main/section6_img.jpg');
 }
 .box2_bg{
-    background-image: url(../img/main/section6_img2.jpg);
+    background-image: url('../img/main/section6_img2.jpg');
 }
 /* section .box end */
+/* section area end */
 
 /* section swiper, item area start */
 .item_wrap{}
@@ -130,3 +148,49 @@ section .banner img{
     left: 40px;
 }
 /* section swiper, item area end */
+
+/* media query */
+@media screen and (max-width : 1024px){
+    .swiper-container {
+        /* min-width: 50%; */
+    }
+}
+
+@media screen and (max-width : 960px){
+
+}
+
+@media screen and (max-width : 640px){
+    .text_area{
+        text-align: left;
+        word-break: keep-all;
+    }
+    .text_area h2{
+        font-size: 30px;
+    }
+    .text_area p{
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    /* common btn style  */
+    .text_area a{
+        margin: 3px;
+    }
+    
+    /* box */
+    .box{
+        float : none;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .box:last-child{
+        margin-bottom: 0;
+    }
+    .box1_bg{
+        background-image: url('../img/main/mobile_section6_img1.jpg');
+    }
+    .box2_bg{
+        background-image: url('../img/main/mobile_section6_img2.jpg');
+    }
+}
