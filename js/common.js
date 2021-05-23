@@ -36,7 +36,7 @@ $(function () {
         }
     })
 
-    // section click removeClass mgnb
+    //section click removeClass mgnb
     $('section').click(function () {
         // body scroll stop
         $('body').removeClass('body_scroll');

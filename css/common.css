@@ -62,6 +62,7 @@ header .htop{
     height: 42px;
     line-height : 42px;
     background: #f5f5f5;
+    transition : 0.3s;
 }
 
 header .htop .inner{
@@ -443,9 +444,10 @@ header > .hbottom{
 
 /* footer area start */
 footer{
+    position : relative;
+    font-size: 12px;
     background: #111;
     color : #999;
-    font-size: 12px;
 }
 
 footer ul li a:hover{
@@ -635,7 +637,7 @@ footer .ftop ul li a{
         overflow : hidden;
         float : none;
         display: block;
-        width: 278.61px;
+        width: 283.33px;
         margin : 0 auto 10px;
     }
     .fmiddle ul{

@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+.container{
+    color : #111;
+}
+
+/* content_title area start */
+.content_title{
+    overflow : hidden;
+    padding : 20px 0;
+    border-bottom : 1px solid #d9d9d9;
+}
+.content_title h2{
+    float : left;
+    font-size: 24px;
+}
+.content_title ul{
+    float : right;
+}
+.content_title ul li{
+    float : left;
+    margin-left: 24px;
+}
+.content_title ul li:first-child{
+    margin-left: 0;
+}
+.content_title ul li a{
+    font-size: 16px;
+}
+.content_title ul li a span{
+    margin-right: 5px;
+}
+
+.content_title ul li:first-child a img{
+    width: 16px;
+}
+.content_title ul li a img{
+    width: 12px;
+    margin-bottom: 3px;
+}
+/* content_title area end */
+
+/* lnb area start */
+.lnb{
+    float : left;
+    overflow: auto;
+    width : 280px;
+    height: 80vh;
+    top: 0;
+    padding : 34px 30px 0 0;
+    z-index: 0;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.lnb.fixed_on{
+    position : fixed;
+    margin-top: 100px;
+}
+
+.lnb > ul{
+    margin-bottom: 50px;
+}
+.lnb > ul > li{
+    line-height: 40px;
+}
+
+.lnb ul li a{}
+
+.lnb > ul > li a:hover{
+    opacity: 0.7;
+}
+
+.check_menu{}
+.check_menu .check_menu_title{
+    font-size: 18px;
+    padding : 20px 0;
+    border-top : 1px solid #d1d1d1;
+    background-image: url('../img/NewReleases/arrow_down.png');
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    background-size: 5%;
+    cursor : pointer;
+}
+
+.check_menu .check_menu_title.img_change{
+    background-image: url('../img/NewReleases/arrow_up.png');
+}
+
+.check_menu .check_menu_title img{
+    
+}
+
+.check_menu ul{
+    display : none;
+}
+.check_menu ul li{
+    
+}
+
+.check_menu ul li:last-child{
+    margin-bottom: 20px;
+}
+
+.check_menu ul li input{
+    display : none;
+}
+
+.check_menu ul li input:checked + label:before{
+    background: #000;
+}
+
+.check_menu ul li label{
+    display: inline-block;
+    position : relative;
+    font-size: 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.check_menu ul li label:after{
+    content : '';
+    display : inline-block;
+    position : absolute;
+    left: 5px;
+    top: 40%;
+    width: 10px;
+    height: 5px;
+    border-top : 3px solid #fff;
+    border-right : 3px solid #fff;
+    transform: rotate(135deg);
+}
+.check_menu ul li label:before{
+    content : '';
+    display : inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 7px 5px 0px 0;
+    vertical-align: bottom;
+    border : 1px solid #999;
+    border-radius: 5px;
+}
+.check_menu ul li img{
+    opacity: 0.7;
+    margin-bottom: 3px;
+    margin-right: 10px;
+}
+.check_menu ul li span{
+    font-size: 14px;
+}
+
+/* lnb area end */
+
+/* .content_list area start */
+.content_list{
+    margin-left: 280px;
+    width: calc(100% - 280px);
+}
+/* .content_list area end */
