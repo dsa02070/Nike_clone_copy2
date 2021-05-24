@@ -61,4 +61,10 @@ $(function () {
     $('.mgnb .mgnb_list > li:first-child a, .mNew_Releases button').click(function () {
         mNewReleases.toggleClass('mNew_on');
     })
+
+
+    //search btn event
+    $('.hbottom_btn input, .close, .mobile_btn_search').click(function () {
+        $('.search_expand').slideToggle(300)
+    })
 })

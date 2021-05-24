@@ -18,6 +18,7 @@ gnb : 100;
 .mNew_Releases : 500;
 .hbottom_btn a : 1;
 .hbottom_btn a:before : -1;
+.search_expand : 600;
 
 */
 
@@ -403,11 +404,9 @@ header > .hbottom{
     transition : 0.3s;
     z-index: 500;
 }
-
 .mNew_Releases.mNew_on{
     right: 0;
 }
-
 .mNew_Releases button{
     font-size: 18px;
     line-height: 20px;
@@ -441,6 +440,86 @@ header > .hbottom{
 }
 /* ---- mobile menu area end ---- */
 /* header area end */
+
+/* search btn expand start */
+.search_expand{
+    position : fixed;
+    display: none;
+    top: 0;
+    padding: 20px 50px;
+    z-index: 600;
+    background: #fff;
+}
+.expand_top{
+    display : flex;
+    justify-content: space-between;
+    height: 40px;
+}
+.expand_top .search_logo:hover{
+    opacity: 0.5;
+}
+.expand_top .search_logo a{}
+.expand_top .search_logo a img{
+    
+}
+.expand_top .btn{
+    position: relative;
+}
+.expand_top .btn input{
+    width: 480px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 20px;
+    padding-left: 40px;
+    background-color: #f1f1f1;
+}
+
+.search_btn{
+    position : absolute;
+    left: 10px;
+    top: 10px;
+    width: 24px;
+    height: 24px;
+    background-image: url('../img/common/search_icon.png');
+    cursor: pointer;
+}
+.search_btn:hover{
+    opacity: 0.5;
+}
+
+.close{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.close:hover{
+    opacity: 0.5;
+}
+
+.expand_bottom{
+    width: 470px;
+    margin : 0 auto;
+}
+.expand_bottom p{
+    margin : 25px 0 10px;
+}
+.expand_bottom ul{}
+.expand_bottom ul li{
+    line-height: 34px;
+}
+.expand_bottom ul li a{
+    font-size: 16px;
+    color : #666;
+}
+
+.expand_bottom ul li a:hover{
+    color : #111;
+}
+
+/* search btn expand end */
+
 
 /* footer area start */
 footer{
@@ -618,6 +697,21 @@ footer .ftop ul li a{
     .mobile_btn{
         display : block;
     }
+    /* search_expand */
+    .expand_top{
+        width: 470px;
+        margin : 0 auto;
+    }
+    .expand_top .btn{
+        width: 80%;
+    }
+    .expand_top .search_logo{
+        display : none;
+    }
+    .expand_top .btn input{
+        margin-right: 10px;
+        width: 100%;
+    }
     /* footer */
     footer{
         width: 100%;
@@ -680,6 +774,18 @@ footer .ftop ul li a{
     .mobile_btn ul > li{
         margin-left: 15px;
     }
+    /* search_expand */
+    .expand_top{
+        width: 100%;
+        margin : 0 auto;
+    }
+    .expand_top .btn{
+        width: 70%;
+    }
+    .search_expand.container{
+        padding : 20px 50px;
+    }
+    /* footer */
     .f_menu1 ~ div{
         display : none;
     }
@@ -711,6 +817,11 @@ footer .ftop ul li a{
 }
 
 @media screen and (max-width : 400px){
+    /* search_expand */
+    .expand_top .btn{
+        width: 60%;
+    }
+    /* footer */
     footer .ftop .f_menu1 ul li a{
         font-size: 12px;
     }
