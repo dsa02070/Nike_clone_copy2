@@ -19,6 +19,7 @@ gnb : 100;
 .hbottom_btn a : 1;
 .hbottom_btn a:before : -1;
 .search_expand : 600;
+footer : 60;
 
 */
 
@@ -527,6 +528,7 @@ footer{
     font-size: 12px;
     background: #111;
     color : #999;
+    z-index: 60;
 }
 
 footer ul li a:hover{

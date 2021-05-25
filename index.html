@@ -4,6 +4,7 @@
 <head>
     <title>나이키. Just Do It. Nike.com</title>
     <meta charset="UTF-8">
+    <meta name="description" content="나이키 홈페이지">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
@@ -155,9 +156,9 @@
                     <li><a href="./sub_html/NewReleases.html">New Releases</a>
                         <div class="view">
                             <ul class="submenu">
-                                <li><a href="#">New Featured</a>
+                                <li><a href="./sub_html/NewReleases.html">New Featured</a>
                                     <ul class="more_submenu">
-                                        <li><a href="#">신상품</a></li>
+                                        <li><a href="./sub_html/NewReleases.html">신상품</a></li>
                                         <li><a href="#">SNKRS</a></li>
                                         <li><a href="#">THE BEST</a></li>
                                         <li><a href="#">MEMBER SHOP</a></li>
@@ -198,12 +199,12 @@
                         </div>
                     </li>
                     <!-- men -->
-                    <li><a href="#">Men</a>
+                    <li><a href="./sub_html/men.html">Men</a>
                         <div class="view">
                             <ul class="submenu">
-                                <li><a href="#">New & Featured</a>
+                                <li><a href="./sub_html/men.html">New & Featured</a>
                                     <ul class="more_submenu">
-                                        <li><a href="#">신상품 전체보기</a></li>
+                                        <li><a href="./sub_html/men.html">신상품 전체보기</a></li>
                                         <li><a href="#">SNKRS</a></li>
                                         <li><a href="#">에어 포스 1</a></li>
                                         <li><a href="#">ACG</a></li>
@@ -272,12 +273,12 @@
                         </div>
                     </li>
                     <!-- Women -->
-                    <li><a href="#">Women</a>
+                    <li><a href="./sub_html/women.html">Women</a>
                         <div class="view">
                             <ul class="submenu">
-                                <li><a href="#">New & Featured</a>
+                                <li><a href="./sub_html/women.html">New & Featured</a>
                                     <ul class="more_submenu">
-                                        <li><a href="#">신상품</a></li>
+                                        <li><a href="./sub_html/women.html">신상품</a></li>
                                         <li><a href="#">SNKRS</a></li>
                                         <li><a href="#">THE BEST</a></li>
                                         <li><a href="#">MEMBER SHOP</a></li>
@@ -348,12 +349,12 @@
                         </div>
                     </li>
                     <!-- kids -->
-                    <li><a href="#">Kids</a>
+                    <li><a href="./sub_html/kids.html">Kids</a>
                         <div class="view">
                             <ul class="submenu">
-                                <li><a href="#">New Featured</a>
+                                <li><a href="./sub_html/kids.html">New Featured</a>
                                     <ul class="more_submenu">
-                                        <li><a href="#">신상품</a></li>
+                                        <li><a href="./sub_html/kids.html">신상품</a></li>
                                         <li><a href="#">키즈 썸머 에센셜</a></li>
                                         <li><a href="#">GOOD PRICE 컬렉션</a></li>
                                         <li><a href="#">나이키 키즈 클래식</a></li>
@@ -400,10 +401,10 @@
                         </div>
                     </li>
                     <!-- Sale -->
-                    <li><a href="#">Sale</a>
+                    <li><a href="./sub_html/sale.html">Sale</a>
                         <div class="view">
                             <ul class="submenu">
-                                <li><a href="#">New To Sale</a></li>
+                                <li><a href="./sub_html/sale.html">New To Sale</a></li>
                                 <li><a href="#">Mens Sale</a>
                                     <ul class="more_submenu">
                                         <li><a href="#">러닝</a></li>
@@ -466,8 +467,20 @@
     <!-- section area start -->
     <div class="container">
         <section>
-            <div class="banner">
-                <img src="./img/main/main_banner.gif" alt="메인_배너">
+            <div class="swiper-container main_banner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="banner">
+                            <a href="#"><img src="./img/main/main_banner1.png" alt="메인_배너1"></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner">
+                            <a href="#"><img src="./img/main/main_banner2.png" alt="메인_배너2"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
             <div class="text_area">
                 <h2>PLAY NEW</h2>
@@ -483,10 +496,10 @@
                 <a href="#"><video loop autoplay src="./img/main/section2_banner.mp4" alt="메인_배너"></a>
             </div>
             <div class="text_area">
-                <h2>플로럴 패턴으로 완성하는 여름 스타일링</h2>
-                <p>화려한 플로럴 프린트와 편안한 착용감의 드레스로<br>시원한 여름 스타일링을 완성해보세요.</p>
-                <a href="#">자세히보기</a>
-                <a href="#">더 많은 스타일링 보기</a>
+                <h2>여름을 위한 개성 있는 조던 스타일</h2>
+                <p>감각적인 디자인과 기능성 모두를 갖춘 조던 제품과 함께 개성있는 여름 룩을 준비해보세요</p>
+                <a href="#">구매하기</a>
+                <a href="#">이벤트 자세히 보기 &#62;</a>
             </div>
         </section>
         <section>
@@ -535,7 +548,7 @@
                 </div>
             </div>
         </section>
-        <!-- swiper-section start -->
+        <!-- section swiper-section start -->
         <section>
             <h3>Featured Shoes</h3>
             <div class="swiper-container shoesSlider">
@@ -655,7 +668,6 @@
                 </div>
                 <div class="swiper-scrollbar"></div>
             </div>
-
         </section>
         <section>
             <h3>Apparel Essentials</h3>
@@ -695,7 +707,7 @@
             </div>
 
         </section>
-        <!-- swiper-section end -->
+        <!-- section swiper-section end -->
     </div>
     <!-- section area end -->
 
