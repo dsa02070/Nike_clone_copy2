@@ -1,0 +1,357 @@
+@charset "utf-8";
+
+/* content_title area start */
+.content_title{
+    padding : 20px 0;
+    /* border-bottom : 1px solid #f1f1f1; */
+}
+.content_title:after{
+    content : '';
+    display: block;
+    clear : both;
+}
+.content_title h2{
+    float : left;
+    display: inline-block;
+    font-size: 24px;
+    line-height: 46px;
+}
+.content_title > .recomend{
+    position :relative;
+    float : right;
+}
+
+.content_title > ul > li > a{
+    font-size: 16px;
+}
+/* content_title area end */
+
+/* recomend area start */
+.recomend img{
+    width: 12px;
+    margin : 0 0 3px 3px;
+}
+
+.recomend_item{
+    line-height: 46px;
+}
+
+.recomend_item_menu{
+    visibility: hidden;
+    position : absolute;
+    top: 40px;
+    right: 0px;
+    z-index: 20;
+    opacity: 0;
+    transition : 0.3s;
+}
+.recomend_item_menu.display_on{
+    visibility: visible;
+    opacity: 1;
+}
+.recomend_item_menu ul{
+    border-radius: 10px;
+    padding : 10px 20px 10px 30px;
+    background: #fff;
+}
+.recomend_item_menu ul li{
+    width: 80px;
+    text-align: right;
+    line-height: 30px;
+    color : #666;
+}
+.recomend_item_menu ul li.active{
+    color : #000;
+    font-weight: bold;
+}
+.recomend_item_menu ul li a{
+    font-size: 14px;
+}
+.recomend_item_menu ul li a:hover{
+    color : #111;
+}
+/* recomend area end */
+
+/* sale_select area start */
+.sale_select{
+    position: relative;
+    background: #f1f1f1;
+    margin : 0 0px 100px;
+    width: 100%;
+}
+.sale_select > ul{
+    width: 600px;
+    margin : 0 auto;
+}
+.sale_select > ul:after{
+    content : '';
+    clear: both;
+    display : block;
+}
+.sale_select > ul > li{
+    float : left;
+    width: 200px;
+    padding : 20px 0;
+    text-align: center;
+}
+
+.sale_select > ul > li:nth-child(3) .sale_submenu,.sale_select > ul > li:nth-child(1) .sale_submenu{
+    /* display : none; */
+}
+    
+.sale_select > ul > li > a{
+    display : inline-block;
+    width: 100%;
+}
+.sale_select > ul > li.on{
+    color : blue;
+    border-bottom : 2px solid blue;
+}
+
+.sale_submenu{
+    display : flex;
+    justify-content: center;
+    position : absolute;
+    top: 90px;
+    margin : 0 auto;
+    left: 0;
+    right: 0px;
+    text-align: center;
+}
+.sale_submenu li{
+    position: relative;
+    float : left;
+    flex: 16%;
+    font-size: 16px;
+    text-align: center;
+}
+.sale_submenu li:after{
+    content : '';
+    position: absolute;
+    top: calc(50% - 7px);
+    right: 0px;
+    width: 1px;
+    height: 14px;
+    background: #666;
+}
+.sale_submenu li:last-child:after{
+    display : none;
+}
+.sale_submenu li a{
+    display: inline-block;
+    width: 100%;
+    color : #666;
+}
+
+
+/* sale_select area end */
+
+/* .content_list area start */
+.content_list{
+    width: 100%;
+}
+
+.content_list ul{
+    overflow : hidden;
+}
+
+.content_list ul li{
+    position: relative;
+    float : left;
+    width: calc(33.3333% - 20px);
+    padding-bottom : 30px;
+    margin : 10px;
+}
+.content_list ul li a{}
+.content_list ul li a img{
+    width: 100%;
+}
+
+.content_list img{
+    /* width: 80%; */
+}
+
+.content_list ul li .list_text{
+    margin-bottom: 20px;
+}
+.text_top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.text_top span{
+    color : #111;
+}
+
+.content_list ul li .list_text span:nth-of-type(1){
+    margin-right: 14px;
+    
+}
+.content_list ul li .list_text span:nth-of-type(2){
+    white-space: nowrap;
+}
+    
+.text_bottom{
+    
+}
+.content_list ul li .list_text p{
+    font-size: 14px;
+    color : #888;
+}
+/* thumb_img */
+.thumb_img{
+    visibility: hidden;
+    position : absolute;
+    bottom: 10px;
+}
+.thumb_img img{
+    width: 30px;
+    height: 30px;
+    border : 1px solid #d1d1d1;
+}
+.content_list li:hover .thumb_img{
+    visibility: visible;
+}
+
+/* .content_list area end */
+
+/* media query */
+@media screen and (max-width : 1024px){
+    .content_title ul li a span{
+        font-size: 14px;
+    }
+    /* mobile lnb style start */
+    .lnb{
+        display : none;
+        position : fixed;
+        top: 190px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding : 20px 50px;
+    }
+    .lnb > ul > li{
+        line-height: 36px;
+    }
+    .check_menu .check_menu_title{
+        padding : 14px 0;
+    }
+    /* mobile lnb style end */
+
+    /* content list */
+    .content_list{
+        margin-left: 0px;
+        width: 100%;
+    }
+    .content_list ul li{
+        float : left;
+        width: calc(50% - 20px);
+        margin : 10px;
+    }
+    /* content title filter */
+    .filter{
+        display : none;
+    }
+    /* mobile_filter */
+    .mobile_filter{
+        display : inline-block;  
+    }
+    /* recomend_item */
+    .recomend_item{
+        display : none;
+    }
+}
+
+@media screen and (max-width : 960px){
+    .lnb{
+        top: 150px;
+    }
+    /* sale.select */
+    .sale_select{
+        margin-bottom: 60px;
+    }
+    .sale_select > ul{
+        width: 300px;
+    }
+    .sale_select > ul > li{
+        width: 100px;
+        padding : 10px 0;
+    }
+    .sale_submenu{
+        top: 70px;
+    }
+    .sale_submenu li{
+        font-size: 14px;
+    }
+    .sale_submenu li:after{
+        display : none;
+    }
+    .sale_submenu li a{
+        color : #666;
+    }
+}
+
+@media screen and ( max-width : 600px){
+    /* sale_select */
+    .sale_select{
+        margin-bottom: 160px;
+    }
+    .sale_submenu{
+        flex-wrap: wrap;
+    }
+    .sale_submenu li{
+        flex: 50%;
+        line-height: 40px;
+        border-bottom : 1px solid #666;
+    }
+}
+
+@media screen and (max-width : 465px){
+    .content_title h2{
+        /* font-size: 18px; */
+        line-height: 46px;
+    }
+    .content_title ul li{
+        margin-left: 12px;
+    }
+    .content_title ul li a span{
+        font-size: 12px;
+    }
+    /* content title filter */
+    .filter{
+        border : 1px solid #d1d1d1;
+        padding : 5px 20px;
+        border-radius: 23px;
+    }
+    .content_title > ul > li > .filter span{
+        line-height: 18px;
+    }
+    /* content_list */
+    .content_list ul li{
+        float : left;
+        width: calc(100% - 20px);
+        margin : 10px;
+    }
+    /* sale_select */
+    .sale_select > ul{
+        width: 240px;
+    }
+    .sale_select > ul > li{
+        width: 80px;
+    }
+}
+@media screen and (max-width : 405px){
+    .content_title h2{
+        font-size: 5vw;
+    }
+}
+@media screen and (max-width : 330px){
+    body,html{
+        min-width: 330px;
+    }
+    .content_title h2{
+        font-size: 18px;
+    }
+}

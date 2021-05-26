@@ -6,12 +6,6 @@
 
 */
 
-/* jquery toggleClass */
-.body_scroll{
-    overflow : hidden;
-    padding-right: 17px;
-}
-
 .container{
     /* color : #111; */
 }
@@ -26,7 +20,6 @@
     display: block;
     clear : both;
 }
-
 
 .content_title h2{
     float : left;
@@ -102,9 +95,12 @@
     text-align: right;
     line-height: 30px;
 }
+.new_item_menu ul li.active{
+    color : #000;
+    font-weight: bold;
+}
 .new_item_menu ul li a{
     font-size: 14px;
-    color : #666;
 }
 .new_item_menu ul li a:hover{
     color : #111;
@@ -131,7 +127,6 @@
 }
 .lnb.fixed_on{
     position : fixed;
-    margin-top: 100px;
 }
 
 .lnb > ul{
@@ -171,7 +166,7 @@
     display : none;
 }
 .check_menu ul li{
-    cursor: pointer;
+    
 }
 
 .check_menu ul li:last-child{
@@ -181,10 +176,6 @@
 .check_menu ul li input{
     display : none;
 }
-
-
-
-
 
 .check_menu ul li label{
     display: inline-block;

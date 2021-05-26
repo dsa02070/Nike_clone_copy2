@@ -20,12 +20,18 @@
 /* content_title area start */
 .content_title{
     overflow: hidden;
+    position: relative;
+    width: 100%;
     padding : 20px 0;
 }
+
 .content_title h2{
     position : absolute;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 24px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 .content_title ul{
     display : flex;
@@ -107,53 +113,6 @@ section .banner video{
 .text_area a:last-child{
     margin-right: 0;
 }
-
-/* section .box start */
-.box{
-    position : relative;
-    float : left;
-    width: calc(50% - 1.5%);
-    background: green;
-    margin-right: 3%;
-}
-.box:nth-of-type(2){
-    margin-right: 0;
-}
-.box span{
-    position : absolute;
-    left: 40px;
-    bottom: 100px;
-    font-size: 20px;
-    color : #fff;
-}
-.box a .btn{
-    bottom: 40px;
-    font-size: 18px;
-    padding : 7px 20px;
-    border-radius : 20px;
-    color : #111;
-    background: #fff;
-    transition : 0.3s;
-}
-
-.box a .btn:hover{
-    opacity: 0.7;
-}
-
-.box_bg{
-    width: 100%;
-    height: 700px;
-    background-size: cover;
-    background-position: center;
-}
-
-.box1_bg{
-    background-image: url('../img/main/section6_img.jpg');
-}
-.box2_bg{
-    background-image: url('../img/main/section6_img2.jpg');
-}
-/* section .box end */
 /* section area end */
 
 /* section swiper, item area start */
@@ -166,6 +125,10 @@ section .banner video{
 
 .item_text{
     margin-bottom: 36px;
+}
+.item_text h5{
+    font-size: 14px;
+    margin-top: 20px;
 }
 .item_text h4{
     font-size: 20px;
@@ -194,7 +157,21 @@ section .banner video{
 }
 
 @media screen and (max-width : 960px){
-
+    .content_title{
+    }
+    .content_title h2{
+        position : static;
+        transform: translateY(0%);
+    }
+    .content_title ul{
+        display : block;
+    }
+    .content_title ul li{
+        margin : 0 10px;
+    }
+    .content_title ul li:first-child{
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width : 640px){
@@ -213,21 +190,31 @@ section .banner video{
     .text_area a{
         margin: 3px;
     }
-    
-    /* box */
-    .box{
-        float : none;
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 30px;
+}
+
+@media screen and (max-width : 480px){
+    .content_title h2{
+        font-size: 18px;
     }
-    .box:last-child{
-        margin-bottom: 0;
+    .content_title ul li{
+        margin : 0 5px;
     }
-    .box1_bg{
-        background-image: url('../img/main/mobile_section6_img1.jpg');
+    .content_title ul li a{
+        font-size: 14px;
     }
-    .box2_bg{
-        background-image: url('../img/main/mobile_section6_img2.jpg');
+}
+
+@media screen and (max-width : 363px){
+    .content_title h2{
+        font-size: 16px;
+    }
+    .content_title ul{
+        min-width: 241px;
+    }
+    .content_title ul li{
+        margin : 0 3px;
+    }
+    .content_title ul li a{
+        font-size: 12px;
     }
 }

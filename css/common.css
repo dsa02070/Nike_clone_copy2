@@ -12,6 +12,7 @@ address{font-style : normal;}
 
 /* z-index
 
+top_btn : 700;
 header : 300;
 gnb : 100;
 .mgnb : 400;
@@ -37,6 +38,33 @@ body{
     overflow : hidden;
     padding-right: 17px;
 }
+/* top button */
+.top_btn{
+    position : fixed;
+    bottom: 10px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    background: #d1d1d1;
+    z-index: 700;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition : 0.3s;
+}
+.top_btn.on{
+    visibility: visible;
+    opacity: 1;
+}
+.top_btn:hover{
+    background: orange;
+}
+.top_btn img{
+    position : absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
 /* common style start */
 .container{
@@ -56,7 +84,11 @@ header{
     top: 0;
     width: 100%;
     background: #fff;
+    transition : 0.2s;
     z-index: 300;
+}
+header.hide{
+    top: -104px;
 }
 /* htop area */
 header .htop{
@@ -251,11 +283,11 @@ header > .hbottom{
 
 .mobile_btn ul li a img{}
 
-.blur{
+/* .blur{
     filter : blur(10px);
     opacity: 0.5;
     transition : 0.3s;
-}
+} */
 
 .mgnb_btn{
     position: relative;
@@ -299,7 +331,7 @@ header > .hbottom{
 
 /* --- mgnb --- */
 .mgnb{
-    /* display: none; */
+    display: none;
     overflow: auto;
     position : fixed;
     top: 60px;
@@ -699,6 +731,10 @@ footer .ftop ul li a{
     .mobile_btn{
         display : block;
     }
+    /* mgnb */
+    .mgnb{
+        display: block;
+    }
     /* search_expand */
     .expand_top{
         width: 470px;
@@ -767,11 +803,21 @@ footer .ftop ul li a{
 }
 
 @media screen and (max-width : 640px){
+    /* top button */
+    .top_btn{
+        width: 30px;
+        height: 30px;
+        right: 20px;
+    }
+    .top_btn img{
+        width: 40%;
+    }
+    /* container */
     .container{
         padding : 0 30px;
     }
     .hbottom_on{
-        padding : 0 47px 0 30px;
+        padding : 0 30px 0 30px;
     }
     .mobile_btn ul > li{
         margin-left: 15px;

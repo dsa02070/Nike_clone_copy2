@@ -21,15 +21,30 @@ $(function () {
 
   // section 7th swiper
   let swiper2 = new Swiper(".shoesSlider", {
-    watchSlidesProgress: true,
-    watchSlidesVisibility: true,
     slidesPerView: 3,
     spaceBetween: 30,
     freeMode: true,
-    clickable: true,
     scrollbar: {
       el: ".swiper-scrollbar",
     },
+    breakpoints: {
+      960: {
+        slidesPerView: 3,
+      },
+      640: {
+        slidesPerView: 2.2,
+      },
+      0: {
+        slidesPerView: 1.2,
+      }
+    }
+  });
+
+  // section 8th swiper
+  let swiper3 = new Swiper(".apparel", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    freeMode: true,
     breakpoints: {
       960: {
         slidesPerView: 3,

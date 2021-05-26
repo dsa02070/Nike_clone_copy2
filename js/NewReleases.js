@@ -34,6 +34,11 @@ $(function () {
             $('.new_item > img').attr('src', '../img/NewReleases/arrow_down.png')
         }
     })
+    //recomend_item_menu ul li click event
+    $('.new_item_menu ul li').click(function () {
+        $('.new_item_menu ul li').removeClass('active')
+        $(this).addClass('active');
+    })
 
     // mobile_filter click event
     $('.mobile_filter').click(function () {
