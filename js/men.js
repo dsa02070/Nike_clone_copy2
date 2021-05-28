@@ -11,6 +11,19 @@ $(function () {
         },
     });
 
+    //btn_sub addClass event
+    $('.first_btn').mouseenter(function () {
+        $('.btn_sub a').addClass("visible")
+    })
+    $('.btn_sub').mouseleave(function () {
+        $('.btn_sub a').removeClass('visible')
+    })
+    $('.btn_sub a').mouseenter(function () {
+        $(this).css('opacity', '0.7')
+    }).mouseleave(function () {
+        $(this).css('opacity', '1')
+    })
+
     // main_banner hover autoplay stop
     $('.main_banner').mouseenter(function () {
         swiper1.autoplay.stop();
@@ -61,6 +74,11 @@ $(function () {
 
     // 640px section img change
     $(window).resize(function () {
+        // $('section').each(function () {
+        //     let indexNum = $(this).index()
+        //     console.log(indexNum)
+        //     $('section:eq("' + indexNum + '")').attr('src', "../img/men/mobile_section" + indexNum + "_img.jpg")
+        // })
         let wWidth = $(window).width()
         if (wWidth <= 640) {
             $('.main_banner .swiper-slide:nth-child(1) img').attr('src', "../img/men/mobile_main_banner1.png");

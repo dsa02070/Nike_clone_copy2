@@ -46,21 +46,12 @@ $(function () {
         $('body').toggleClass('body_scroll') // 클릭 시 body영역 overflow:hidden
     })
 
-    // hover 시 첫번째 리스트 img 교체 event
-    $('.content_list li:nth-child(1) .thumb_img img').on('mouseenter', function () {
-        let imgSrc = $(this).attr('src');
-        $('.change_src1').attr('src', imgSrc);
-    })
-
-    // hover 시 두번째 리스트 img 교체 event
-    $('.content_list li:nth-child(2) .thumb_img img').on('mouseenter', function () {
-        let imgSrc = $(this).attr('src');
-        $('.change_src2').attr('src', imgSrc);
-    })
-
-    // hover 시 세번째 리스트 img 교체 event
-    $('.content_list li:nth-child(3) .thumb_img img').on('mouseenter', function () {
-        let imgSrc = $(this).attr('src');
-        $('.change_src3').attr('src', imgSrc);
+    // content_list li click event
+    $('.content_list li').each(function () {
+        let indexNum = $(this).index()
+        $('.content_list li:eq("' + indexNum + '") .thumb_img img').on('mouseenter', function () {
+            let imgSrc = $(this).attr('src');
+            $('.change_src' + indexNum).attr('src', imgSrc);
+        })
     })
 })

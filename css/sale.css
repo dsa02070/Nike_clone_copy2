@@ -91,7 +91,6 @@
 .sale_select > ul > li{
     float : left;
     width: 200px;
-    padding : 20px 0;
     text-align: center;
 }
 
@@ -102,6 +101,7 @@
 .sale_select > ul > li > a{
     display : inline-block;
     width: 100%;
+    padding : 20px 0;
 }
 .sale_select > ul > li.on{
     color : blue;
@@ -109,7 +109,7 @@
 }
 
 .sale_submenu{
-    display : flex;
+    display : none;
     justify-content: center;
     position : absolute;
     top: 90px;
@@ -118,6 +118,11 @@
     right: 0px;
     text-align: center;
 }
+
+.sale_submenu.sub_on{
+    display : flex;
+}
+
 .sale_submenu li{
     position: relative;
     float : left;
@@ -162,6 +167,9 @@
     padding-bottom : 30px;
     margin : 10px;
 }
+.content_list ul li.display_off{
+    display : none;
+}
 .content_list ul li a{}
 .content_list ul li a img{
     width: 100%;
@@ -179,22 +187,31 @@
     justify-content: space-between;
     margin-top: 16px;
 }
-
 .text_top span{
     color : #111;
 }
-
+.text_top span em{
+    font-size: 14px;
+    margin-right: 8px;
+    margin-bottom: 2px;
+    color : red;
+}
 .content_list ul li .list_text span:nth-of-type(1){
     margin-right: 14px;
-    
 }
 .content_list ul li .list_text span:nth-of-type(2){
     white-space: nowrap;
 }
-    
-.text_bottom{
-    
+.text_bottom p:first-child{
+    display: inline-block;
+}    
+.text_bottom em{
+    float : right;
+    font-size: 14px;
+    text-decoration: line-through;
+    color : #666;
 }
+
 .content_list ul li .list_text p{
     font-size: 14px;
     color : #888;
@@ -213,7 +230,6 @@
 .content_list li:hover .thumb_img{
     visibility: visible;
 }
-
 /* .content_list area end */
 
 /* media query */
@@ -277,6 +293,8 @@
     }
     .sale_select > ul > li{
         width: 100px;
+    }
+    .sale_select > ul > li > a{
         padding : 10px 0;
     }
     .sale_submenu{
@@ -290,6 +308,20 @@
     }
     .sale_submenu li a{
         color : #666;
+    }
+    /* content_list list_text */
+    .text_top{
+        display: block;
+    }
+    .text_top span{
+        display: block;
+    }
+    .text_top span em{
+        display : block;
+    }
+    .text_bottom em{
+        float : none;
+        margin-left: 10px;
     }
 }
 

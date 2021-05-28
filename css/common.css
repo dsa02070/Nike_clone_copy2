@@ -9,6 +9,7 @@ h1,h2,h3,h4,h5,h6{font-weight : normal; line-height : 1; font-size: 100%;}
 img{vertical-align: middle;}
 input,button{outline:none;border:none;background: none;}
 address{font-style : normal;}
+em{font-style: normal;}
 
 /* z-index
 
@@ -36,7 +37,6 @@ body{
 
 .body_scroll{
     overflow : hidden;
-    padding-right: 17px;
 }
 /* top button */
 .top_btn{

@@ -62,22 +62,22 @@ $(function () {
     })
 
     //section click removeClass mgnb
-    $('section').click(function () {
-        // body scroll stop
-        $('body').removeClass('body_scroll');
+    // $('section').click(function () {
+    //     // body scroll stop
+    //     $('body').removeClass('body_scroll');
 
-        // scroll bar width padding
-        $('.hbottom.container').removeClass('hbottom_on');
+    //     // scroll bar width padding
+    //     $('.hbottom.container').removeClass('hbottom_on');
 
-        // mobile btn span event 
-        $('.mgnb_btn a span:nth-child(1)').removeClass('first_bar');
-        $('.mgnb_btn a span:nth-child(2)').removeClass('opacity_zero');
-        $('.mgnb_btn a span:nth-child(3)').removeClass('last_bar');
+    //     // mobile btn span event 
+    //     $('.mgnb_btn a span:nth-child(1)').removeClass('first_bar');
+    //     $('.mgnb_btn a span:nth-child(2)').removeClass('opacity_zero');
+    //     $('.mgnb_btn a span:nth-child(3)').removeClass('last_bar');
 
-        // mobile gnb
-        $('.mgnb').removeClass('mgnb_on');
-        mNewReleases.removeClass('mNew_on');
-    })
+    //     // mobile gnb
+    //     $('.mgnb').removeClass('mgnb_on');
+    //     mNewReleases.removeClass('mNew_on');
+    // })
 
     // mobile NewReleases event
     $('.mgnb .mgnb_list > li:first-child a, .mNew_Releases button').click(function () {
