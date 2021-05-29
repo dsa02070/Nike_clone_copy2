@@ -24,7 +24,6 @@
     width: 100%;
     padding : 20px 0;
 }
-
 .content_title h2{
     position : absolute;
     top: 50%;
@@ -32,6 +31,7 @@
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #111;
 }
 .content_title ul{
     display : flex;
@@ -55,28 +55,23 @@ section{
     overflow : hidden;
     margin-bottom: 100px;
 }
-
 section:nth-of-type(6){
     margin-bottom: 0px;
 }
-
 section:last-of-type{
     margin-bottom: 150px;
 }
-
 section h3{
     font-size: 22px;
     margin-bottom: 20px;
     color : #111;
 }
-
 section > a{
     float : right;
     font-size: 14px;
     margin-bottom: 10px;
     color : #666;
 }
-
 section .banner{
     width: 100%;
     overflow : hidden;
@@ -84,28 +79,24 @@ section .banner{
 section .banner img{
     width: 100%;
 }
-
 section .banner video{
     width: 100%;
 }
-
 .text_area{
     text-align: center;
 }
-/* title */
+/* kids title */
 .text_area h2{
     font-size: 40px;
     line-height: 44px;
     font-weight: bold;
     margin: 30px 0 15px;
+    color: #111;
 }
 .text_area p{
     font-size: 18px;
     margin-bottom: 15px;
-}
-
-.text_area p:last-of-type{
-
+    color: #111;
 }
 
 /* common btn style */
@@ -114,24 +105,19 @@ section .banner video{
     border-radius: 22px;
     padding : 10px 20px;
     margin-right: 3px;
-    background: #000;
+    background: #111;
     color : #fff;
     transition : 0.3s;
 }
-
 .text_area a:hover{
     opacity: 0.7;
 }
-
 .text_area a:last-child{
     margin-right: 0;
 }
 /* btn_group */
 .btn_group{
     display : inline-block;
-}
-.btn_group a{
-
 }
 .btn_group{
     overflow: hidden;
@@ -222,8 +208,8 @@ section:nth-child(2) .box_text_area a{
 .box2_bg{
     background-image: url('../img/women/section6-2_img.jpg');
 }
+
 /* section 7th .box start */
-section:nth-child(7){}
 section:nth-child(7) .box{
     width: 100%;
 }
@@ -235,11 +221,9 @@ section:nth-child(7) .box .box_text_area{
 section:nth-child(7) .box p{
     font-size: 20px;
 }
-
 section:nth-child(7) .box_bg{
     height: 450px;
 }
-
 section:nth-child(7) .box1_bg{
     background-image: url('../img/kids/shoes01.jpg');
 }
@@ -249,6 +233,7 @@ section:nth-child(7) .box2_bg{
 section:nth-child(7) .box3_bg{
     background-image: url('../img/kids/shoes03.jpg');
 }
+
 /* section 9th */
 section:nth-child(9) .item{
     position: relative;
@@ -258,6 +243,7 @@ section:nth-child(9) .item_text{
     bottom: 0%;
     left: 10%;
 }
+
 /* section 13th */
 section:nth-child(13) h3{
     display : inline-block;
@@ -265,17 +251,12 @@ section:nth-child(13) h3{
 section:nth-child(13) h4{
     line-height: 26px;
 }
-
 /* section .box end */
 
 /* section swiper, item area start */
-.item_wrap{}
-.item_wrap .item{}
-.item_wrap .item a{}
 .item_wrap .item a img{
     width: 100%;
 }
-
 .item_text{
     margin-bottom: 36px;
 }
@@ -288,13 +269,13 @@ section:nth-child(13) h4{
     font-size: 20px;
     font-weight : bold;
     margin : 10px 0;
+    color: #111;
 }
 .item_text p{
     font-size: 14px;
     margin-bottom: 5px;
-    color : #333;
+    color : #666;
 }
-
 .item span{
     position : absolute;
     font-size: 16px;
@@ -305,15 +286,7 @@ section:nth-child(13) h4{
 /* section area end */
 
 /* media query */
-@media screen and (max-width : 1024px){
-    .swiper-container {
-        /* min-width: 50%; */
-    }
-}
-
 @media screen and (max-width : 960px){
-    .content_title{
-    }
     .content_title h2{
         position : static;
         transform: translateY(0%);

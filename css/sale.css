@@ -3,7 +3,6 @@
 /* content_title area start */
 .content_title{
     padding : 20px 0;
-    /* border-bottom : 1px solid #f1f1f1; */
 }
 .content_title:after{
     content : '';
@@ -11,16 +10,15 @@
     clear : both;
 }
 .content_title h2{
-    float : left;
     display: inline-block;
     font-size: 24px;
     line-height: 46px;
+    color: #111;
 }
 .content_title > .recomend{
     position :relative;
     float : right;
 }
-
 .content_title > ul > li > a{
     font-size: 16px;
 }
@@ -31,11 +29,9 @@
     width: 12px;
     margin : 0 0 3px 3px;
 }
-
 .recomend_item{
     line-height: 46px;
 }
-
 .recomend_item_menu{
     visibility: hidden;
     position : absolute;
@@ -61,14 +57,11 @@
     color : #666;
 }
 .recomend_item_menu ul li.active{
-    color : #000;
     font-weight: bold;
+    color : #111;
 }
 .recomend_item_menu ul li a{
     font-size: 14px;
-}
-.recomend_item_menu ul li a:hover{
-    color : #111;
 }
 /* recomend area end */
 
@@ -92,12 +85,7 @@
     float : left;
     width: 200px;
     text-align: center;
-}
-
-.sale_select > ul > li:nth-child(3) .sale_submenu,.sale_select > ul > li:nth-child(1) .sale_submenu{
-    /* display : none; */
-}
-    
+} 
 .sale_select > ul > li > a{
     display : inline-block;
     width: 100%;
@@ -107,7 +95,7 @@
     color : blue;
     border-bottom : 2px solid blue;
 }
-
+/* sale submenu */
 .sale_submenu{
     display : none;
     justify-content: center;
@@ -118,11 +106,9 @@
     right: 0px;
     text-align: center;
 }
-
 .sale_submenu.sub_on{
     display : flex;
 }
-
 .sale_submenu li{
     position: relative;
     float : left;
@@ -147,19 +133,15 @@
     width: 100%;
     color : #666;
 }
-
-
 /* sale_select area end */
 
 /* .content_list area start */
 .content_list{
     width: 100%;
 }
-
 .content_list ul{
     overflow : hidden;
 }
-
 .content_list ul li{
     position: relative;
     float : left;
@@ -170,18 +152,13 @@
 .content_list ul li.display_off{
     display : none;
 }
-.content_list ul li a{}
 .content_list ul li a img{
     width: 100%;
 }
-
-.content_list img{
-    /* width: 80%; */
-}
-
 .content_list ul li .list_text{
     margin-bottom: 20px;
 }
+/* text top area */
 .text_top{
     display: flex;
     justify-content: space-between;
@@ -202,6 +179,7 @@
 .content_list ul li .list_text span:nth-of-type(2){
     white-space: nowrap;
 }
+/* text bottom area */
 .text_bottom p:first-child{
     display: inline-block;
 }    
@@ -211,7 +189,6 @@
     text-decoration: line-through;
     color : #666;
 }
-
 .content_list ul li .list_text p{
     font-size: 14px;
     color : #888;

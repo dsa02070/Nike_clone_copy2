@@ -8,7 +8,7 @@
     width: 12px;
     height: 12px;
     border-radius: 0%;
-    background: black;
+    background: #111;
     opacity: 0.7;
   }
   .swiper-pagination-bullet-active{
@@ -24,7 +24,6 @@
     width: 100%;
     padding : 20px 0;
 }
-
 .content_title h2{
     position : absolute;
     top: 50%;
@@ -32,6 +31,7 @@
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #111;
 }
 .content_title ul{
     display : flex;
@@ -55,28 +55,23 @@ section{
     overflow : hidden;
     margin-bottom: 100px;
 }
-
 section:nth-of-type(2){
     margin-bottom: 10px;
 }
-
 section:last-of-type{
     margin-bottom: 150px;
 }
-
 section h3{
     display: inline-block;
     font-size: 22px;
     margin-bottom: 20px;
     color : #111;
 }
-
 section > a{
     float : right;
     font-size: 14px;
     color : #666;
 }
-
 section .banner{
     width: 100%;
     overflow : hidden;
@@ -84,27 +79,24 @@ section .banner{
 section .banner img{
     width: 100%;
 }
-
 section .banner video{
     width: 100%;
 }
-
 .text_area{
     text-align: center;
 }
-/* title */
+/* men title */
 .text_area h2{
     font-size: 40px;
     font-weight: bold;
     margin: 30px 0 15px;
+    color: #111;
 }
+/* men sub text */
 .text_area p{
     font-size: 18px;
     margin-bottom: 15px;
-}
-
-.text_area p:last-of-type{
-
+    color: #111;
 }
 
 /* common btn style */
@@ -113,24 +105,19 @@ section .banner video{
     border-radius: 22px;
     padding : 10px 20px;
     margin-right: 3px;
-    background: #000;
+    background: #111;
     color : #fff;
     transition : 0.3s;
 }
-
 .text_area a:hover{
     opacity: 0.7;
 }
-
 .text_area a:last-child{
     margin-right: 0;
 }
 /* btn_group */
 .btn_group{
     display : inline-block;
-}
-.btn_group a{
-
 }
 .btn_group{
     overflow: hidden;
@@ -157,13 +144,9 @@ section .banner video{
 /* section area end */
 
 /* section swiper, item area start */
-.item_wrap{}
-.item_wrap .item{}
-.item_wrap .item a{}
 .item_wrap .item a img{
     width: 100%;
 }
-
 .item_text{
     margin-bottom: 36px;
 }
@@ -172,35 +155,30 @@ section .banner video{
     margin-top: 20px;
     color : #666
 }
+/* swiper title */
 .item_text h4{
     font-size: 20px;
     font-weight : bold;
     margin : 10px 0;
+    color: #111;
 }
+/* swiper sun text */
 .item_text p{
     font-size: 14px;
     margin-bottom: 5px;
-    color : #333;
+    color : #666;
 }
-
 .item span{
     position : absolute;
     font-size: 16px;
     top: 40px;
     left: 40px;
+    color: #111;
 }
 /* section swiper, item area end */
 
 /* media query */
-@media screen and (max-width : 1024px){
-    .swiper-container {
-        /* min-width: 50%; */
-    }
-}
-
 @media screen and (max-width : 960px){
-    .content_title{
-    }
     .content_title h2{
         position : static;
         transform: translateY(0%);

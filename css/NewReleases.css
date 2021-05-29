@@ -6,26 +6,21 @@
 
 */
 
-.container{
-    /* color : #111; */
-}
-
 /* content_title area start */
 .content_title{
     padding : 20px 0;
-    /* border-bottom : 1px solid #f1f1f1; */
 }
 .content_title:after{
     content : '';
     display: block;
     clear : both;
 }
-
+/* newreleases title */
 .content_title h2{
-    float : left;
     display: inline-block;
     font-size: 24px;
     line-height: 46px;
+    color: #111;
 }
 .content_title > ul{
     float : right;
@@ -37,13 +32,8 @@
 .content_title > ul > li:first-child{
     margin-left: 0;
 }
-
 .content_title > ul > li:nth-child(2){
     position :relative;
-}
-
-.content_title > ul > li > a{
-    font-size: 16px;
 }
 /* mobile_filter */
 .mobile_filter{
@@ -57,8 +47,9 @@
 }
 .content_title > ul > li > a > span{
     margin-right: 5px;
+    line-height: 46px;
+    color: #111;
 }
-
 .content_title ul li:first-child a img{
     width: 16px;
 }
@@ -66,10 +57,6 @@
     width: 12px;
     margin-bottom: 3px;
 }
-.content_title ul li a span{
-    line-height: 46px;
-}
-
 
 /* new_item_menu */
 .new_item_menu{
@@ -81,6 +68,7 @@
     opacity: 0;
     transition : 0.3s;
 }
+/* jquery addClass */
 .new_item_menu.display_on{
     visibility: visible;
     opacity: 1;
@@ -95,8 +83,9 @@
     text-align: right;
     line-height: 30px;
 }
+/* jquery addClass */
 .new_item_menu ul li.active{
-    color : #000;
+    color : #111;
     font-weight: bold;
 }
 .new_item_menu ul li a{
@@ -105,7 +94,6 @@
 .new_item_menu ul li a:hover{
     color : #111;
 }
-
 /* content_title area end */
 
 /* lnb area start */
@@ -114,7 +102,6 @@
     overflow: auto;
     width : 280px;
     height: 80vh;
-    top: 0;
     padding : 34px 30px 0 0;
     z-index: 50;
     box-sizing: border-box;
@@ -127,8 +114,8 @@
 }
 .lnb.fixed_on{
     position : fixed;
+    top: 0;
 }
-
 .lnb > ul{
     margin-bottom: 50px;
 }
@@ -136,16 +123,19 @@
     line-height: 40px;
 }
 
-.lnb ul li a{}
+.lnb ul li a{
+    color: #111;
+}
 
 .lnb > ul > li a:hover{
     opacity: 0.7;
 }
 
-.check_menu{}
+/* .check_menu area */
 .check_menu .check_menu_title{
     font-size: 18px;
     padding : 20px 0;
+    color: #111;
     border-top : 1px solid #d1d1d1;
     background-image: url('../img/NewReleases/arrow_down.png');
     background-repeat: no-repeat;
@@ -153,37 +143,28 @@
     background-size: 12px;
     cursor : pointer;
 }
-
+/* jquery addClass */
 .check_menu .check_menu_title.img_change{
     background-image: url('../img/NewReleases/arrow_up.png');
 }
-
-.check_menu .check_menu_title img{
-    
-}
-
 .check_menu ul{
     display : none;
 }
-.check_menu ul li{
-    
-}
-
 .check_menu ul li:last-child{
     margin-bottom: 20px;
 }
-
 .check_menu ul li input{
     display : none;
 }
-
 .check_menu ul li label{
     display: inline-block;
     position : relative;
     font-size: 14px;
     margin-bottom: 10px;
+    color: #111;
     cursor: pointer;
 }
+/* 체크 표시 */
 .check_menu ul li label:after{
     content : '';
     display : none;
@@ -196,11 +177,10 @@
     border-right : 3px solid #fff;
     transform: rotate(135deg);
 }
-
 .check_menu ul li input:checked + label:after{
     display: inline-block;
 }
-
+/* 체크 표시 영역 */
 .check_menu ul li label:before{
     content : '';
     display : inline-block;
@@ -211,7 +191,7 @@
     border : 1px solid #999;
     border-radius: 5px;
 }
-
+/* 체크 시 배경 검정 (색상 영역 제외) */
 .check_menu ul:not(:nth-of-type(3)) li input:checked + label:before{
     background: #000;
 }
@@ -221,14 +201,12 @@
     width: 49%;
     display : inline-block;
 }
-
 .color_pick li:last-child{
     display : block;
 }
 .color_pick li label{
     width: 75px;
 }
-
 .color_pick li label:before{
     content : '';
     display : block
@@ -273,13 +251,16 @@
 }
 /* color_pick label:before style area end */
 
+/* 체크 메뉴 화살표 이미지 */
 .check_menu ul li img{
+    width: 12px;
     opacity: 0.7;
-    margin-bottom: 3px;
-    margin-right: 10px;
+    margin : 0px 10px 3px 0;
 }
 .check_menu ul li span{
+    display: inline-block;
     font-size: 14px;
+    margin-top: 10px;
 }
 
 /* lnb area end */
@@ -289,12 +270,10 @@
     margin-left: 290px;
     width: calc(100% - 280px);
 }
-
 .content_list.width_on{
     margin-left: 0;
     width : 100%;
 }
-
 .content_list ul{
     overflow : hidden;
 }
@@ -305,15 +284,10 @@
     padding-bottom : 30px;
     margin : 10px;
 }
-.content_list ul li a{}
 .content_list ul li a img{
     width: 100%;
 }
-
-.content_list ul li:nth-child(2) img{
-    /* width: 80%; */
-}
-
+/* list text area */
 .content_list ul li .list_text{
     margin-bottom: 20px;
 }
@@ -322,21 +296,16 @@
     justify-content: space-between;
     margin-top: 16px;
 }
-
 .text_top span{
     color : #111;
 }
-
+/* 제품 이름과 가격사이의 간격 */
 .content_list ul li .list_text span:nth-of-type(1){
     margin-right: 14px;
-    
 }
+/* 가격 줄 변경 방지 */
 .content_list ul li .list_text span:nth-of-type(2){
     white-space: nowrap;
-}
-    
-.text_bottom{
-    
 }
 .content_list ul li .list_text p{
     font-size: 14px;
