@@ -28,4 +28,15 @@ $(function () {
             }
         }
     });
+
+
+    // 전체 삭제 클릭 시 삭제
+    $('.delete_all').click(function () {
+        $('.item_wrap').css("display", 'none');
+    })
+
+    // item wrap close_btn click event
+    $('.close_btn').click(function () {
+        $(this).parents('.item_wrap').css("display", 'none');
+    })
 })

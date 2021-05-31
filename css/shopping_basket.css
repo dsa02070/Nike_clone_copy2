@@ -19,10 +19,6 @@
     color : #666;
 }
 
-.shopping_basket_info{
-    
-}
-
 /* shopping basket info */
 .shopping_basket_info p{
     font-size: 12px;
@@ -31,8 +27,6 @@
 }
 
 /* content wrap area */
-.content_wrap{
-}
 .content_wrap_top{
     display : flex;
 }
@@ -51,7 +45,6 @@
     line-height: 50px;
     color : #666;
 }
-
 
 /* item wrap area */
 .item_wrap{
@@ -180,7 +173,6 @@
     color : #fff;
     background: rgb(255, 72, 0);
 }
-
 .offer_code{
     padding : 20px 0;
 }

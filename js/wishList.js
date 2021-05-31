@@ -10,7 +10,6 @@ $(function () {
     //lnb event
     $(window).scroll(function () {
         let scTop = $(this).scrollTop()
-        console.log(scTop)
         if (scTop >= 33) {
             $('.lnb').addClass("Top_on")
         } else {
