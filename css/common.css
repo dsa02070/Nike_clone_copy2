@@ -169,7 +169,7 @@ header .hbottom{
     flex-wrap: wrap;
     right: 0;
     left: 0;
-    padding-bottom: 10px;
+    padding-bottom: 45px;
     background: #fff;
 }
 .submenu > li{
@@ -182,11 +182,11 @@ header .hbottom{
     color: #111;
 }
 .more_submenu > li{
-    line-height: 32px;
+    line-height: 28px;
 }
 .more_submenu > li > a{
     display: block;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     color : #888;
 }

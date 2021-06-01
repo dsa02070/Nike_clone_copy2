@@ -306,6 +306,10 @@ section:nth-child(12) h4{
     .box2_bg{
         background-image: url('../img/women/mobile_section6-2_img.jpg');
     }
+    /* section 9th title */
+    section:nth-child(9) h2{
+        line-height: 36px;
+    }
     /* section8th .box_bg img */
     section:nth-child(8) .box1_bg{
         background-image: url('../img/women/mobile_section8-1_img.jpg');

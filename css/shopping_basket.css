@@ -117,7 +117,7 @@
     cursor : pointer
 }
 
-/* right select area */
+/* right order area */
 .right_order_area{
     flex: 1;
     min-width: 270px;
@@ -126,7 +126,7 @@
 .order{
     border : 1px solid #d1d1d1;
 }
-.div_wrap{
+.order_div_wrap{
     padding : 10px 20px;
     box-sizing: border-box;
 }
@@ -138,15 +138,15 @@
     padding-left: 20px;
     background: #d9d9d9;
 }
-.order .div_wrap > div{
+.order .order_div_wrap > div{
     overflow: hidden;
     height: 35px;
     line-height: 35px;
 }
-.order .div_wrap > div span{
+.order .order_div_wrap > div span{
     font-size: 12px;
 }
-.order .div_wrap > div span:last-child{
+.order .order_div_wrap > div span:last-child{
     float : right;
 }
 .order_product_discount span:last-child{
@@ -155,11 +155,11 @@
 .order_discount span:last-child{
     color : red;
 }
-.div_wrap .order_total span:first-child{
+.order_div_wrap .order_total span:first-child{
     font-size: 14px;
     color : red;
 }
-.div_wrap .order_total span:last-child{
+.order_div_wrap .order_total span:last-child{
     font-size: 14px;
     color : red;
 }
@@ -173,6 +173,7 @@
     color : #fff;
     background: rgb(255, 72, 0);
 }
+/* offer_code area */
 .offer_code{
     padding : 20px 0;
 }
@@ -258,6 +259,7 @@
 /* swiper .item_wrap style end */
 /* content area end */
 
+/* media query area */
 @media screen and (max-width: 1480px){
     .content_area{
         width: 100%;
