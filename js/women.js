@@ -74,11 +74,6 @@ $(function () {
 
     // 640px section img change
     $(window).resize(function () {
-        // $('section').each(function () {
-        //     let indexNum = $(this).index()
-        //     console.log(indexNum)
-        //     $('section:eq("' + indexNum + '")').attr('src', "../img/men/mobile_section" + indexNum + "_img.jpg")
-        // })
         let wWidth = $(window).width()
         if (wWidth <= 640) {
             $('.main_banner .swiper-slide:nth-child(1) img').attr('src', "../img/women/mobile_main_banner1.png");

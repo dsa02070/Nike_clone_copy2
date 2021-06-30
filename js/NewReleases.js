@@ -46,7 +46,7 @@ $(function () {
         $('body').toggleClass('body_scroll') // 클릭 시 body영역 overflow:hidden
     })
 
-    // content_list li click event
+    // content_list li mouseenter event
     $('.content_list li').each(function () {
         let indexNum = $(this).index()
         $('.content_list li:eq("' + indexNum + '") .thumb_img img').on('mouseenter', function () {
